@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-background text-slate-200 antialiased font-sans;
+    background-image: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.08), transparent 25%),
+                      radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08), transparent 25%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  /* Premium Glass Cards */
+  .glass-card {
+    @apply bg-surface/70 backdrop-blur-xl border border-slate-700/50 rounded-xl shadow-xl transition-all duration-300;
+  }
+  
+  .glass-card-hover {
+    @apply hover:bg-surface/90 hover:border-primary/50 hover:shadow-primary/20 hover:-translate-y-1;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 font-medium rounded-lg transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-indigo-600 text-white shadow-lg shadow-primary/30 hover:shadow-primary/50;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600;
+  }
+
+  /* Form Elements */
+  .input-field {
+    @apply bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-2 text-slate-200 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors;
+  }
+
+  /* Badges */
+  .badge {
+    @apply px-2.5 py-0.5 rounded-full text-xs font-semibold;
+  }
+  
+  .badge-primary {
+    @apply bg-primary/10 text-primary border border-primary/20;
+  }
+  
+  .badge-success {
+    @apply bg-accent/10 text-accent border border-accent/20;
+  }
+  
+  /* Tables */
+  .table-container {
+    @apply w-full overflow-x-auto rounded-xl border border-slate-700/50 bg-slate-800/30;
+  }
+  
+  .data-table {
+    @apply w-full text-left border-collapse;
+  }
+  
+  .data-table th {
+    @apply px-6 py-4 bg-slate-800/50 text-slate-400 font-semibold border-b border-slate-700/50 whitespace-nowrap;
+  }
+  
+  .data-table td {
+    @apply px-6 py-4 border-b border-slate-700/50 text-slate-300;
+  }
+  
+  .data-table tr:hover {
+    @apply bg-slate-700/20;
+  }
+  
+  .data-table tr:last-child td {
+    @apply border-0;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}
