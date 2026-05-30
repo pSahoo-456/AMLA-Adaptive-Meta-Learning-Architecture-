@@ -42,17 +42,17 @@ graph TD
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-- 🧬 **Dataset DNA Fingerprinting**: Extracts 60 meta-features across 5 layers (Structural, Statistical, Info-Theoretic, Landmarking, Complexity).
-- 🎯 **Smart Algorithm Selection**: Achieves **72% Precision@1** on benchmark datasets in under 200ms.
-- 🔧 **Feature Health Advisor**: Detects 10 types of data quality issues (e.g., imbalance, skewness, missing values) and generates Python code remediation snippets.
-- 🧠 **Self-Improving System**: Continuous feedback loop retrains the meta-learner as the Meta-Knowledge Base grows.
-- 📊 **Explainable AI (XAI)**: Provides SHAP-grounded natural language justifications for every algorithm recommendation.
+-  **Dataset DNA Fingerprinting**: Extracts 60 meta-features across 5 layers (Structural, Statistical, Info-Theoretic, Landmarking, Complexity).
+- **Smart Algorithm Selection**: Achieves **72% Precision@1** on benchmark datasets in under 200ms.
+-  **Feature Health Advisor**: Detects 10 types of data quality issues (e.g., imbalance, skewness, missing values) and generates Python code remediation snippets.
+- **Self-Improving System**: Continuous feedback loop retrains the meta-learner as the Meta-Knowledge Base grows.
+- **Explainable AI (XAI)**: Provides SHAP-grounded natural language justifications for every algorithm recommendation.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Installation
 
@@ -83,7 +83,7 @@ Open your browser to **http://localhost:5173**.
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### Python API
 
@@ -128,7 +128,7 @@ curl -X POST "http://localhost:8000/analyze" \
 
 ---
 
-## 🏗️ Meta-Feature Layers ("Dataset DNA")
+## Meta-Feature Layers ("Dataset DNA")
 
 AMLA extracts a rich 60-dimensional vector organized into five distinct layers:
 
@@ -140,7 +140,7 @@ AMLA extracts a rich 60-dimensional vector organized into five distinct layers:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 AMLA/
@@ -159,7 +159,7 @@ AMLA/
 
 ---
 
-## 🧪 Testing & Validation
+##  Testing & Validation
 
 To run the unit tests and end-to-end smoke tests:
 ```bash
@@ -173,6 +173,6 @@ python demo.py
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
